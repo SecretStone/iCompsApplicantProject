@@ -1,0 +1,38 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: #61dafb solid 2px;
+    padding: 16px;
+    border-radius: 15px;
+    margin: 16px;
+    width: 90%;
+}
+
+.title {
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+
+.task {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.solution {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 16px;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    margin-left: auto;
+    flex-direction: row;
+    gap: 32px;
+}

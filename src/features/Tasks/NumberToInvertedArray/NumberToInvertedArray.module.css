@@ -1,0 +1,30 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.title {
+    margin-bottom: 8px;
+    margin-top: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.solution {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container {
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

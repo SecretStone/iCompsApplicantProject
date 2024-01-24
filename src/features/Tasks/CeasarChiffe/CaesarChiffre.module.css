@@ -1,0 +1,27 @@
+.root {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 50%;
+    align-items: flex-start;
+}
+
+.title {
+    margin-bottom: 8px;
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+.encrypted {
+
+}
+
+.decrypted {
+
+}

@@ -1,0 +1,13 @@
+.root {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.link {
+    color: #e15f55;
+    background-color: transparent;
+    font-size: 20px;
+}
