@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 
 import logo from "../../logo.png";
 import Styles from './Home.module.css';
+import routes from "../../routes";
+import {useHistory} from "react-router-dom";
 
 
 const Strings = {
@@ -12,24 +14,33 @@ const Strings = {
 }
 
 const Home = ({ onStart }) => {
+    const history = useHistory();
+
+    const handleButtonClick = () => {
+        history.push(routes.Solutions.homepage);
+    }
+
   return (
-    <div className={Styles.root}>
-      <div>{Strings.WELCOME}</div>
-      <div>{Strings.TASK}</div>
-      <div>{Strings.SUB_TASK}</div>
-      <button onClick={onStart}>Los geht's</button>
-      <img src={logo} alt="logo" />
-      <a
-        className={Styles.link}
-        href="https://icomps.de"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        iComps GmbH
-      </a>
-    </div>
+      <div className={Styles.root}>
+          <div>{Strings.WELCOME}</div>
+          <div>{Strings.TASK}</div>
+          <div>{Strings.SUB_TASK}</div>
+          <button onClick={onStart}>Los geht's</button>
+          <button onClick={handleButtonClick}>Lösungen</button>
+          <img src={logo} alt="logo"/>
+          <a
+              className={Styles.link}
+              href="https://icomps.de"
+              target="_blank"
+              rel="noopener noreferrer"
+          >
+              iComps GmbH
+          </a>
+      </div>
   );
 };
+
+
 
 Home.defaultProps = {};
 

@@ -5,6 +5,7 @@ import Task from '../../../components/Task/Task';
 
 import Styles from './InvertString.module.css';
 import routes from "../../../routes";
+import {Link, NavLink} from "react-router-dom";
 
 const Strings = {
   TITLE: '4) String invertieren',
@@ -21,19 +22,12 @@ const InvertString = ({ string, loopInvertedString, recursivInvertedString }) =>
       title={Strings.TITLE}
       task={Strings.TASK}>
       <div className={Styles.root}>
-        <div className={Styles.title}>{`${Strings.STRING}: ${string}`}</div>
-        <div className={Styles.solution}>
-          <div className={Styles.container}>
-            <div>
-              <div className={Styles.title}>{`${Strings.INVERT_LOOP}: ${loopInvertedString}`}</div>
-            </div>
-          </div>
-          <div className={Styles.container}>
-            <div>
-              <div className={Styles.title}>{`${Strings.INVERT_RECURSIV}: ${recursivInvertedString}`}</div>
-            </div>
-          </div>
-        </div>
+        <NavLink
+            as={Link}
+            to={routes.Solutions.stringInverter}
+        >
+          Lösung
+        </NavLink>
       </div>
     </Task>
   );

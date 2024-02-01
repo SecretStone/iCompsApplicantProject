@@ -1,10 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Task from '../../../components/Task/Task';
 
 import Styles from './DaysToAge.module.css';
 import routes from "../../../routes";
+import {Link, NavLink} from "react-router-dom";
 
 const Strings = {
 	TITLE: '3) Tage umrechnen',
@@ -13,7 +13,7 @@ const Strings = {
 	AGE: 'Tage in Jahre, Monate und Tage',
 };
 
-const DaysToAge = ({ days, age }) => {
+const DaysToAge = () => {
 	return (
 		<Task
 			route={routes.Tasks.daysToAge}
@@ -21,16 +21,14 @@ const DaysToAge = ({ days, age }) => {
 			task={Strings.TASK}
 		>
 			<div className={Styles.root}>
-				<div className={Styles.title}>
-					{`${Strings.DAYS}: ${days}`}
-				</div>
 				<div className={Styles.solution}>
 					<div className={Styles.container}>
-						<div>
-							<div className={Styles.title}>
-								{`${Strings.AGE}: ${age}`}
-							</div>
-						</div>
+						<NavLink
+							as={Link}
+							to={routes.Solutions.daysToAge}
+						>
+							Lösung
+						</NavLink>
 					</div>
 				</div>
 			</div>
@@ -38,9 +36,5 @@ const DaysToAge = ({ days, age }) => {
 	);
 };
 
-DaysToAge.propTypes = {
-	days: PropTypes.number.isRequired,
-	age: PropTypes.string.isRequired,
-};
 
 export default DaysToAge;

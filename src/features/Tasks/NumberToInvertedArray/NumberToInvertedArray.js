@@ -31,6 +31,7 @@ const NumberToInvertedArray = ({ number, invertedArray }) => {
 								className={Styles.title}
 							>{`${Strings.INVERTED_ARRAY}: ${invertedArray}`}</div>
 						</div>
+						<div>Noch keine Lösung</div>
 					</div>
 				</div>
 			</div>

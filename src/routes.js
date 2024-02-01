@@ -1,4 +1,5 @@
 const TASKS = 'tasks';
+const SOLUTIONS = 'solutions'
 
 const routes = {
   Home: `/`,
@@ -10,6 +11,16 @@ const routes = {
     ceasarChiffre: `/${TASKS}/ceasarChiffre`,
     numberToInvertedArray: `/${TASKS}/numberToInvertedArray`,
     assetDetails: `/${TASKS}/assetDetails`,
+  },
+  Solutions: {
+    arrayInverter: `/${SOLUTIONS}/arrayInverter`,
+    numberBases: `/${SOLUTIONS}/numberBases`,
+    stringInverter: `/${SOLUTIONS}/stringInverter`,
+    daysToAge: `/${SOLUTIONS}/daysToAge`,
+    ceasarChiffre: `/${SOLUTIONS}/ceasarChiffre`,
+    numberToInvertedArray: `/${SOLUTIONS}/numberToInvertedArray`,
+    homepage: `/${SOLUTIONS}/homepage`,
+    noPage: `/${SOLUTIONS}/noPage`,
   },
 };
 

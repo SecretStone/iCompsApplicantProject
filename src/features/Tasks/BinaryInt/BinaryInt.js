@@ -5,6 +5,7 @@ import Task from '../../../components/Task/Task';
 
 import Styles from './BinaryInt.module.css';
 import routes from "../../../routes";
+import {Link, NavLink} from "react-router-dom";
 
 const Strings = {
   TITLE: '5) Binärzahl konvertieren',
@@ -23,14 +24,14 @@ const BinaryInt = ({ binaryNumber, decimalNumber }) => {
       <div className={Styles.root}>
         <div className={Styles.solution}>
           <div className={Styles.container}>
-            <div>
-              <div className={Styles.title}>{`${Strings.BINARY}: ${binaryNumber.toString(2)}`}</div>
-            </div>
+            <NavLink
+                as={Link}
+                to={routes.Solutions.numberBases}
+            >
+              Lösung
+            </NavLink>
           </div>
           <div className={Styles.container}>
-            <div>
-              <div className={Styles.title}>{`${Strings.DECIMAL}: ${decimalNumber.toString(10)}`}</div>
-            </div>
           </div>
         </div>
       </div>

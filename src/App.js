@@ -16,12 +16,22 @@ import routes from "./routes";
 import store from "./redux/stores";
 
 import Styles from './App.module.css';
+import BinaryCalculatorPage from "./features/Solutions/BinaryCalculatorPage";
+import CaesarCipherPage from "./features/Solutions/CaesarCipherPage";
+import DayCalculatorPage from "./features/Solutions/DayCalculatorPage";
+import HomePage from "./features/Solutions/HomePage";
+import NoPage from "./features/Solutions/NoPage";
+import ReverseArrayPage from "./features/Solutions/ReverseArrayPage";
+import StringInverterPage from "./features/Solutions/StringInverterPage";
+import './App.css'
+import Header from "./components/Solution/Header";
 
 function App() {
   return (
     <Provider store={store}>
       <ConnectedRouter history={history}>
         <div className={Styles.app}>
+
           <Switch>
             <Route
               component={ArrayInvertContainer}
@@ -52,6 +62,41 @@ function App() {
               component={NumberToInvertedArrayContainer}
               name="NumberToInt"
               path={routes.Tasks.numberToInvertedArray}
+            />
+            <Route
+                component={BinaryCalculatorPage}
+                name="BinaryCalculator"
+                path={routes.Solutions.numberBases}
+            />
+            <Route
+                component={CaesarCipherPage}
+                name="CaesarsCipre"
+                path={routes.Solutions.ceasarChiffre}
+            />
+            <Route
+                component={DayCalculatorPage}
+                name="DayCalculator"
+                path={routes.Solutions.daysToAge}
+            />
+            <Route
+                component={HomePage}
+                name="HomePage"
+                path={routes.Solutions.homepage}
+            />
+            <Route
+                component={NoPage}
+                name="NoPage"
+                path={routes.Solutions.noPage}
+            />
+            <Route
+                component={ReverseArrayPage}
+                name="arrayInverter"
+                path={routes.Solutions.arrayInverter}
+            />
+            <Route
+                component={StringInverterPage}
+                name="StringInverter"
+                path={routes.Solutions.stringInverter}
             />
             <Route
               name="AssetDetails"

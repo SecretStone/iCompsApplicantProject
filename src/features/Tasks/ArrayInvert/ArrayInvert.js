@@ -5,6 +5,7 @@ import Task from '../../../components/Task/Task';
 
 import Styles from './ArrayInvert.module.css';
 import routes from "../../../routes";
+import {Link, NavLink} from "react-router-dom";
 
 const Strings = {
   TITLE: '2) Array invertieren',
@@ -25,14 +26,14 @@ const ArrayInvert = ({ array, arrayWithHelperArray, arrayWithoutHelperArray}) =>
         <div className={Styles.title}>{`${Strings.ARRAY}: ${array.join(',')}`}</div>
         <div className={Styles.solution}>
           <div className={Styles.container}>
-            <div>
-              <div className={Styles.title}>{`${Strings.ARRAY_WITH_ARRAY}: ${arrayWithHelperArray.join(',')}`}</div>
-            </div>
+              <NavLink
+                  as={Link}
+                  to={routes.Solutions.arrayInverter}
+              >
+                Lösung
+              </NavLink>
           </div>
           <div className={Styles.container}>
-            <div>
-              <div className={Styles.title}>{`${Strings.ARRAY_WITHOUT_ARRAY}: ${arrayWithoutHelperArray.join(',')}`}</div>
-            </div>
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import Task from '../../../components/Task/Task';
 
 import Styles from './CaesarChiffre.module.css';
 import routes from "../../../routes";
+import {Link, NavLink} from "react-router-dom";
 
 const Strings = {
   TITLE: '6) Cäsar Chiffre',
@@ -13,23 +14,20 @@ const Strings = {
   DECRYPTED: 'Entschlüsselt',
 }
 
-const CaesarChiffre = ({encrypted, decrypted, secretKey}) => {
+const CaesarChiffre = () => {
   return (
     <Task
       route={routes.Tasks.ceasarChiffre}
       title={Strings.TITLE}
       task={Strings.TASK}
     >
-      <div>{`Schlüssel: ${secretKey}`}</div>
       <div className={Styles.root}>
-        <div className={Styles.container}>
-          <div className={Styles.title}>{Strings.ENCRYPTED}</div>
-          <div className={Styles.encrypted}>{`"${encrypted}"`}</div>
-        </div>
-        <div className={Styles.container}>
-          <div className={Styles.title}>{Strings.DECRYPTED}</div>
-          <div className={Styles.decrypted}>{`"${decrypted}"`}</div>
-        </div>
+        <NavLink
+            as={Link}
+            to={routes.Solutions.ceasarChiffre}
+        >
+          Lösung
+        </NavLink>
       </div>
     </Task>
   );

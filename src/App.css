@@ -1,3 +1,32 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+
+.dropdown {
+  position: relative !important;
+  transform: unset !important;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.HeadLineBox {
+  border: 2px dashed black;
+  padding: 8px;
+  font-size: 18px;
+  text-align: center;
+  margin-right: 122px;
+  margin-left: 122px;
+}
+
+
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +65,39 @@
     transform: rotate(360deg);
   }
 }
+
+.imageSize {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+.bg-custom {
+  background-color: #1C224B;
+}
+
+.infoIcon {
+  width: 22px !important;
+  height: 22px !important;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+}
+
+.infoIcon img.Sirv.image-hover{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.infoIcon:hover img.Sirv.image-hover {
+  opacity: 1;
+}
+
+
+
+

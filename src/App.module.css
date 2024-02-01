@@ -1,10 +1,112 @@
+
+
+
 .app {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: center;
     width: 100vw;
 }
 
+.outerContainer {
+    width: 100%;
+}
+
+.ownLogo {
+    background-position: bottom;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75px;
+}
+
+.iCompsLogo {
+    background-position: bottom;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    height: 40px;
+    width: auto;
+}
+
+.headerContainer {
+    background-color: #1C224B;
+    position: relative;
+    width: auto;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdownItemsStyle {
+    border-color: #f4f4f4 !important;
+    color: #f4f4f4 !important;
+    background-color: #1C224B !important;
+}
+
+.dropdownItemsStyle:active {
+    color: #1C224B !important;
+    background-color: unset !important;
+}
+
+.dropdownItemsStyle:hover {
+    border-color: #039BE5 !important;
+}
+
+.dropdownListStyle {
+    color: #f4f4f4!important;
+}
+
+.dropdownListStyle:hover {
+    color: #039BE5!important;
+    background-color: unset !important;
+}
+
+.dropdownButtonStyle {
+    color: #f4f4f4!important;
+}
+
+.dropdownButtonStyle:hover {
+    color: #039BE5!important;
+}
+
+.dropdown {
+    position: unset !important;
+    transform: unset !important;
+    display: flex;
+    justify-content: center;
+}
+
+.infoCard {
+    left: 57.3%;
+    top: 72px;
+    position: absolute;
+}
+.overwriteWithNothing {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-top: 0px !important;
+}
+
+.inputButton {
+    background-color: #1C224B !important;
+    color: #f4f4f4 !important;
+    width: 110px !important;
+}
+
+.inputButton:hover {
+    color: #039BE5!important;
+}
+
+.caesarChipherIndexInputContainer {
+    flex-grow: 0.4;
+}
+
+.imagesize {
+    width: 22px !important;
+    height: auto!important;
+}
 
