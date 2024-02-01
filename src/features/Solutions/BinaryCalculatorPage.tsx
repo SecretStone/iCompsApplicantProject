@@ -1,8 +1,6 @@
-import PageChangeDropdown from "../../components/Solution/PageChangeDropdown";
 import OutputFileGroup from "../../components/Solution/OutputFileGroup";
 import React, {useState} from "react";
 import NumberInputFileGroup from "../../components/Solution/NumberInputFileGroup";
-import {items_dropdown} from "../../assets/Constants";
 import Header from "../../components/Solution/Header";
 import Styles from '../../App.module.css';
 

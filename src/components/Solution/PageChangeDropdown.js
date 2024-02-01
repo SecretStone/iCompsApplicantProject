@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import DropdownGroup from "../../components/Solution/DropdownGroup";
 import {color, items_dropdown} from "../../assets/Constants";
 import {useHistory} from "react-router-dom";
@@ -26,7 +26,7 @@ function getCurrentPage() {
         case `/${SOLUTIONS}/ceasarChiffre`:
             Page = items_dropdown[5]
             break
-        case `/${SOLUTIONS}/noPage`:
+        default:
             Page = 'No Page Found'
             break
     }

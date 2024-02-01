@@ -102,7 +102,8 @@
 }
 
 .caesarChipherIndexInputContainer {
-    flex-grow: 0.4;
+    margin-bottom: 1rem;
+    flex-grow: 0.4 !important;
 }
 
 .imagesize {

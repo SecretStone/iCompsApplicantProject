@@ -38,7 +38,7 @@ function getCurrentPage() {
         case `/${SOLUTIONS}/ceasarChiffre`:
             page = items_dropdown[5]
             break
-        case `/${SOLUTIONS}/noPage`:
+        default :
             page = 'No Page Found'
             break
     }
@@ -78,6 +78,8 @@ const Header = () => {
                 outputArray[0] = 'Gib einen Text ein welchen du nach dem cäsar Chiffre prinzip umwandeln möchtest! Schreibe dazu Den Text und dann ein Leerzeichen mit Doppelpunkt gefolgt von der Verschiebung welche du verwenden Möchtest! (also zum Beispiel: " :5"). Auch negative verschiebung ist Möglich!'
                 outputArray[1] = caesarChiffreCard
                 break
+            default:
+                outputArray[0] = 'No Information found! This is an Error that should not appear'
         }
         return outputArray;
     }
@@ -95,15 +97,15 @@ const Header = () => {
 
     return (
         <div className={Styles.headerContainer}>
-            <a href={routes.Solutions.homepage}><img className={Styles.ownLogo} src={logo}/></a>
+            <a href={routes.Solutions.homepage}><img className={Styles.ownLogo} src={logo} alt='Not Found'/></a>
             <PageChangeDropdown></PageChangeDropdown>
             <a href={'https://icomps.de/'}>
-                <img className={Styles.iCompsLogo} src={icompsLogo}/>
+                <img className={Styles.iCompsLogo} src={icompsLogo} alt='Not Found'/>
             </a>
             <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
             <a onClick={handleInfoClick} className='infoIcon'>
-                <img src={infoIconWhite} className='Sirv image-main'/>
-                <img src={infoIconBlue} className={'Sirv image-hover ' + Styles.imagesize}/>
+                <img src={infoIconWhite} className='Sirv image-main' alt='Not Found'/>
+                <img src={infoIconBlue} className={'Sirv image-hover ' + Styles.imagesize} alt='Not Found'/>
             </a>
             {cardComponentVisible && <CardComponent card_text={infoCardBuilder()[0]} image_src={infoCardBuilder()[1]}
                                                     titel={infoCardBuilder()[2]}></CardComponent>}

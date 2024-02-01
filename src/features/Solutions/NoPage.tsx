@@ -1,9 +1,8 @@
-import PageChangeDropdown from "../../components/Solution/PageChangeDropdown";
 import React from "react";
 import Header from "../../components/Solution/Header";
 import Styles from "../../App.module.css";
 
-export default function () {
+export default function NoPage() {
 
     return (
         <div className={Styles.outerContainer}>

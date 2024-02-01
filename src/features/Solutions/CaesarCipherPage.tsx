@@ -12,7 +12,7 @@ export default function CaesarCipherPage() {
     const handleInput = (inputstr: string[]) => {
         const text = inputstr[0]
         let shift = 0
-        if (inputstr[1] != '') {
+        if (inputstr[1] !== '') {
             shift = Number(inputstr[1])
         }
 
